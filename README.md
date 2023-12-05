@@ -5,7 +5,7 @@
 1. Changed Nginx conf file as given below: 
  server {
          listen       80;
-         server_name  site1;
+         server_name  awesomeweb;  
       
 
         location / {
@@ -48,11 +48,12 @@
         127.0.0.1       Subdomain2
 
 3. Added website file at the location mentioned in the Nginx Conf file.
-4. started Nginx. 
+4. Started Nginx on widnwos Powershell using command: start nginx 
 5. Now, Awsome web can be accessed at http://awesomeweb/, and subdomains can be access at  http://Subdomain1 and http:Subdomain2
 
 
 #python program writtern to check the status of the domain running which gives output in tabuler formate as given below: 
+
 PS C:\Users\Kaver> & C:/Users/Kaver/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/Kaver/Downloads/nginx/Subdomain_check.py
 Checking subdomains...
 +------------+--------+
