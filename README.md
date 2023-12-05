@@ -63,3 +63,38 @@ Checking subdomains...
 | subdomain1 |  200   |
 | subdomain2 |  200   |
 +------------+--------+
+
+=======================================================================================================================================================================
+Task 2: 
+
+Install Nginx inside the Ubuntu machine and host a website. 
+
+Come back to your host machine (windows/Linux/mac) and scan the virtual machine using nmap. Create the documentation of the process and the output of the scan. Observe the ports which are open.
+
+Documentation: 
+
+1. Installing Nginx on Ubuntu:
+
+Opened a terminal on the Ubuntu virtual machine.
+Updated the package list: sudo apt update
+Installed Nginx: sudo apt install nginx
+Started Nginx and enabled it to start on boot: sudo systemctl start nginx and sudo systemctl enable nginx
+Created a simple HTML file for the website: echo "<html><body><h1>Hello, this is your Nginx-hosted website!</h1></body></html>" | sudo tee /var/www/html/index.html
+Accessed the website through a web browser using the virtual machine's IP address.
+
+
+2. Nmap Scan:
+
+Opened a terminal on the host machine.
+Ran an Nmap scan on the Ubuntu virtual machine's IP address: nmap VMaddress
+Reviewed the output of the scan to observe open ports.
+
+Nmap Scan Output:
+
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-12-05 18:39 India Standard Time
+Nmap scan report for 10.0.2.15
+Host is up (0.027s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Nmap done: 1 IP address (1 host up) scanned in 8.71 seconds
