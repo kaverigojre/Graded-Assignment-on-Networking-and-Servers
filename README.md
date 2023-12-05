@@ -79,7 +79,7 @@ Opened a terminal on the Ubuntu virtual machine.
 Updated the package list: sudo apt update
 Installed Nginx: sudo apt install nginx
 Started Nginx and enabled it to start on boot: sudo systemctl start nginx and sudo systemctl enable nginx
-Created a simple HTML file for the website: echo "<html><body><h1>Hello, this is your Nginx-hosted website!</h1></body></html>" | sudo tee /var/www/html/index.html
+Created a simple HTML file for the website: echo "<html><body><h1>Hello, this is Kaveri's Nginx-hosted website!</h1></body></html>" | sudo tee /var/www/html/index.html
 Accessed the website through a web browser using the virtual machine's IP address.
 
 
